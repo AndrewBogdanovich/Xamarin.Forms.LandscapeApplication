@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:OrientationApp"
+             xmlns:pages="clr-namespace:OrientationApp.Pages;assembly=OrientationApp"
+             x:Class="OrientationApp.Pages.MainPage">
+
+    <StackLayout x:Name="ImageLayout" Style="{StaticResource LayoutState}">
+        <Image Source="image.png" HeightRequest="170" WidthRequest="220" VerticalOptions="Start"/>
+        <StackLayout x:Name="InfoLayout" Style="{StaticResource LayoutState}">
+            <Label Text="Xamarin was here"/>
+            <Label Text="11.01.2019"/>
+        </StackLayout>
+        <Button Text="NextPage" Clicked="Button_OnClicked"/>
+    </StackLayout>
+</pages:BasePage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OrientationApp.App">
+    <Application.Resources>
+        
+        <Style TargetType="StackLayout" x:Key="LayoutState">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup Name="OrientationState">
+                        <VisualState Name="Portrait">
+                            <VisualState.Setters>
+                                <Setter Property="Orientation" Value="Vertical"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState Name="Landscape">
+                            <VisualState.Setters>
+                                <Setter Property="Orientation" Value="Horizontal"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+
+    </Application.Resources>
+
+</Application>
