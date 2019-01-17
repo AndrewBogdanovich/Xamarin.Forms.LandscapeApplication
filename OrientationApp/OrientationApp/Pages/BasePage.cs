@@ -1,24 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace OrientationApp.Pages
 {
-    public class BasePage : ContentPage
+    public class BasePage : ContentPage, IDisposable
     {
-        public event EventHandler<DisplayOrientation> OnOrientationChanged;
-
+        protected List<View> ViewsForOrientation = new List<View>();
         public BasePage()
         {
             DeviceDisplay.MainDisplayInfoChanged += OnMainDisplayInfoChanged;
         }
+
+        public void Dispose()
+        {
+            DeviceDisplay.MainDisplayInfoChanged -= OnMainDisplayInfoChanged;
+        }
         void OnMainDisplayInfoChanged(object sender, DisplayInfoChangedEventArgs e)
         {
-            OnOrientationChanged?.Invoke(this, e.DisplayInfo.Orientation);
-            Debug.WriteLine(e.DisplayInfo.Orientation.ToString());
+            GoToOrientation();
         }
-        
+
+        protected void GoToOrientation()
+        {
+            foreach (var view in ViewsForOrientation)
+            {
+                VisualStateManager.GoToState(view, DeviceDisplay.MainDisplayInfo.Orientation.ToString());
+            }
+        }
     }
 }
