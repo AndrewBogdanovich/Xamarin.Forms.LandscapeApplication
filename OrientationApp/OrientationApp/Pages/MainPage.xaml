@@ -3,14 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:OrientationApp"
              xmlns:pages="clr-namespace:OrientationApp.Pages;assembly=OrientationApp"
-             x:Class="OrientationApp.Pages.MainPage">
+             x:Class="OrientationApp.Pages.MainPage"
+                Title="Netflix">
 
-    <StackLayout x:Name="ImageLayout" Style="{StaticResource LayoutState}">
-        <Image Source="image.png" HeightRequest="170" WidthRequest="220" VerticalOptions="Start"/>
-        <StackLayout x:Name="InfoLayout" Style="{StaticResource LayoutState}">
-            <Label Text="Xamarin was here"/>
-            <Label Text="11.01.2019"/>
-        </StackLayout>
-        <Button Text="NextPage" Clicked="Button_OnClicked"/>
+    <StackLayout>
+        <ScrollView>
+            <StackLayout Spacing="15" Padding="10">
+                <StackLayout Style="{StaticResource StackLayoutState}" x:Name="FirstFrameLayout" Spacing="10">
+                    <Frame x:Name="FirstFrame" Style="{StaticResource FrameState}">
+                        <Label x:Name="Alabel" Text="Films" Style="{StaticResource LabelState}"/>
+                    </Frame>
+                    <Frame x:Name="SecondFrame" Style="{StaticResource FrameState}">
+                        <Label x:Name="Blabel" Text="Serials" Style="{StaticResource LabelState}"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Style="{StaticResource StackLayoutState}" x:Name="SecondFrameLayout" Spacing="10">
+                    <Frame x:Name="ThirdFrame" Style="{StaticResource FrameState}">
+                        <Label x:Name="Clabel" Text="News" Style="{StaticResource LabelState}"/>
+                    </Frame>
+                    <Frame x:Name="FourthFrame" Style="{StaticResource FrameState}">
+                        <Label x:Name="Dlabel" Text="Rating" Style="{StaticResource LabelState}"/>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </StackLayout>
 </pages:BasePage>

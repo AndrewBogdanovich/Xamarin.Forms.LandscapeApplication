@@ -10,11 +10,8 @@ namespace OrientationApp.Pages
         {
             InitializeComponent();
             GoToOrientation();
-            ViewsForOrientation.AddRange(new List<View> { ImageLayout, InfoLayout });
+            ViewsForOrientation.AddRange(new List<View> { FirstFrameLayout, SecondFrameLayout, FirstFrame, SecondFrame, ThirdFrame, FourthFrame, Alabel, Blabel, Clabel, Dlabel });
         }
-        private void Button_OnClicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new SecondPage());
-        }
+        
     }
 }

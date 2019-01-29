@@ -17,6 +17,8 @@ namespace OrientationApp.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
+            Window window = Window;
+            window.SetStatusBarColor(Android.Graphics.Color.Red);
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
