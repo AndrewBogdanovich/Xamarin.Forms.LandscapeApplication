@@ -26,7 +26,6 @@ namespace OrientationApp.Pages
         protected override void OnAppearing()
         {
             base.OnAppearing();
-           
         }
     }
 }

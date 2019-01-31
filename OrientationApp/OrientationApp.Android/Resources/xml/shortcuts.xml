@@ -1,0 +1,20 @@
+﻿<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+  <shortcut
+    android:shortcutId="sessions"
+    android:enabled="true"
+    android:icon="@drawable/image"
+    android:shortcutShortLabel="@string/Sessions"
+    android:shortcutLongLabel="@string/Sessions"
+    android:shortcutDisabledMessage="@string/Sessions">
+    <intent
+      android:action="android.intent.action.VIEW"
+      android:targetPackage="com.companyname.OrientationApp"
+      android:targetClass="com.companyname.OrientationApp.MainActivity"
+      android:data="sessions" />
+    <!-- If your shortcut is associated with multiple intents, include them
+         here. The last intent in the list is what the user sees when they
+         launch this shortcut. -->
+    <categories android:name="android.shortcut.conversation" />
+  </shortcut>
+  <!-- Specify more shortcuts here. -->
+</shortcuts>

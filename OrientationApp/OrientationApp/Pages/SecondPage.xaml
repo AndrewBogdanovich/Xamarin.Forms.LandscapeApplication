@@ -5,7 +5,7 @@
              x:Class="OrientationApp.Pages.SecondPage">
     <ContentPage.Content>
         <StackLayout x:Name="layout" Style="{StaticResource LayoutState}">
-            <Label Text="text text text"/>
+            <Label Text="Hello shortcuts"/>
             <Button Text="button"/>
         </StackLayout>
     </ContentPage.Content>
