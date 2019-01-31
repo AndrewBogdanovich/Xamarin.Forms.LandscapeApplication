@@ -2,6 +2,7 @@
 
 using Android.App;
 using Android.Content.PM;
+using Android.Graphics;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
@@ -18,7 +19,7 @@ namespace OrientationApp.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             Window window = Window;
-            window.SetStatusBarColor(Android.Graphics.Color.Red);
+            window.SetStatusBarColor(Color.Rgb(206,0,0));
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

@@ -33,7 +33,7 @@
                         <VisualState Name="Portrait">
                             <VisualState.Setters>
                                 <Setter Property="HeightRequest" Value="150"/>
-                                <Setter Property="BackgroundColor" Value="Red"/>
+                                <Setter Property="BackgroundColor" Value="#ce0000"/>
                             </VisualState.Setters>
                         </VisualState>
                         <VisualState Name="Landscape">

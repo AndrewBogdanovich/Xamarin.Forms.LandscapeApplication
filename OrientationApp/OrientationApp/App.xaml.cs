@@ -14,7 +14,7 @@ namespace OrientationApp
 
             MainPage = new NavigationPage(new MainPage())
             {
-                BarBackgroundColor = Color.Red
+                BarBackgroundColor = Color.FromHex("#ce0000")
             };
         }
 
