@@ -1,4 +1,5 @@
 ﻿using System;
+using DLToolkit.Forms.Controls;
 using OrientationApp.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,8 +12,8 @@ namespace OrientationApp
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new MainPage())
+            FlowListView.Init();
+            MainPage = new NavigationPage(new LoginPage())
             {
                 BarBackgroundColor = Color.FromHex("#ce0000")
             };

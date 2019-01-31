@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:pages="clr-namespace:OrientationApp.Pages;assembly=OrientationApp"
+             x:Class="OrientationApp.Pages.LoginPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BackgroundColor="#ce0000">
+            <StackLayout Padding="30,100" Spacing="10">
+                <Label Text="News" FontSize="45" TextColor="Yellow" HorizontalOptions="Center"/>
+                <StackLayout Style="{StaticResource StackLayoutState}" Spacing="10" x:Name="CredLayout">
+                    <Entry Placeholder="Username" HorizontalOptions="FillAndExpand" Keyboard="Email" BackgroundColor="White" TextColor="Black"/>
+                    <Entry Placeholder="Password" HorizontalOptions="FillAndExpand" IsPassword="True" BackgroundColor="White" TextColor="Black"/>
+                </StackLayout>
+                <Button Text="Login" BackgroundColor="Yellow" CornerRadius="5" Clicked="Button_OnClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</pages:BasePage>
