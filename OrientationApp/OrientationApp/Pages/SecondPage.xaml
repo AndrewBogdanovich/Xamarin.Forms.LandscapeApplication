@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <pages:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:pages="clr-namespace:OrientationApp.Pages;assembly=OrientationApp"
-             xmlns:controls="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
-             x:Class="OrientationApp.Pages.SecondPage"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:pages="clr-namespace:OrientationApp.Pages;assembly=OrientationApp"
+                xmlns:controls="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+                x:Class="OrientationApp.Pages.SecondPage"
                 Title="News items">
 
     <ContentPage.Content>
@@ -15,6 +15,7 @@
                                    BackgroundColor="Black">
                 <controls:FlowListView.FlowColumnTemplate>
                     <DataTemplate>
+
                         <StackLayout Margin="7">
                             <Frame Margin="0" BackgroundColor="DodgerBlue" CornerRadius="10">
                                 <StackLayout>
@@ -25,6 +26,7 @@
                                 </StackLayout>
                             </Frame>
                         </StackLayout>
+
                     </DataTemplate>
                 </controls:FlowListView.FlowColumnTemplate>
             </controls:FlowListView>

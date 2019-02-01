@@ -9,20 +9,24 @@
             <Setter Property="VisualStateManager.VisualStateGroups">
                 <VisualStateGroupList>
                     <VisualStateGroup Name="OrientationState">
+
                         <VisualState Name="Portrait">
                             <VisualState.Setters>
                                 <Setter Property="Orientation" Value="Vertical"/>
                             </VisualState.Setters>
                         </VisualState>
+
                         <VisualState Name="Landscape">
                             <VisualState.Setters>
                                 <Setter Property="Orientation" Value="Horizontal"/>
                             </VisualState.Setters>
                         </VisualState>
+
                     </VisualStateGroup>
                 </VisualStateGroupList>
             </Setter>
         </Style>
+
         <!--frame customization-->
         <Style TargetType="Frame" x:Key="FrameState">
             <Setter Property="Padding" Value="10"/>
@@ -31,22 +35,26 @@
             <Setter Property="VisualStateManager.VisualStateGroups">
                 <VisualStateGroupList>
                     <VisualStateGroup Name="OrientationState">
+
                         <VisualState Name="Portrait">
                             <VisualState.Setters>
                                 <Setter Property="HeightRequest" Value="150"/>
                                 <Setter Property="BackgroundColor" Value="Yellow"/>
                             </VisualState.Setters>
                         </VisualState>
+
                         <VisualState Name="Landscape">
                             <VisualState.Setters>
                                 <Setter Property="HeightRequest" Value="100"/>
                                 <Setter Property="BackgroundColor" Value="OrangeRed"/>
                             </VisualState.Setters>
                         </VisualState>
+
                     </VisualStateGroup>
                 </VisualStateGroupList>
             </Setter>
         </Style>
+
         <!--label customization-->
         <Style TargetType="Label" x:Key="LabelState">
             <Setter Property="FontSize" Value="20"/>
@@ -55,16 +63,19 @@
             <Setter Property="VisualStateManager.VisualStateGroups">
                 <VisualStateGroupList>
                     <VisualStateGroup Name="OrientationState">
+
                         <VisualState Name="Portrait">
                             <VisualState.Setters>
                                 <Setter Property="TextColor" Value="Black"/>
                             </VisualState.Setters>
                         </VisualState>
+
                         <VisualState Name="Landscape">
                             <VisualState.Setters>
                                 <Setter Property="TextColor" Value="Yellow"/>
                             </VisualState.Setters>
                         </VisualState>
+
                     </VisualStateGroup>
                 </VisualStateGroupList>
             </Setter>
@@ -77,16 +88,19 @@
             <Setter Property="VisualStateManager.VisualStateGroups">
                 <VisualStateGroupList>
                     <VisualStateGroup Name="OrientationState">
+
                         <VisualState Name="Portrait">
                             <VisualState.Setters>
                                 <Setter Property="HeightRequest" Value="250"/>
                             </VisualState.Setters>
                         </VisualState>
+
                         <VisualState Name="Landscape">
                             <VisualState.Setters>
                                 <Setter Property="HeightRequest" Value="350"/>
                             </VisualState.Setters>
                         </VisualState>
+
                     </VisualStateGroup>
                 </VisualStateGroupList>
             </Setter>
@@ -97,16 +111,19 @@
             <Setter Property="VisualStateManager.VisualStateGroups">
                 <VisualStateGroupList>
                     <VisualStateGroup Name="OrientationState">
+
                         <VisualState Name="Portrait">
                             <VisualState.Setters>
                                 <Setter Property="Margin" Value="0"/>
                             </VisualState.Setters>
                         </VisualState>
+
                         <VisualState Name="Landscape">
                             <VisualState.Setters>
                                 <Setter Property="Margin" Value="30,0"/>
                             </VisualState.Setters>
                         </VisualState>
+
                     </VisualStateGroup>
                 </VisualStateGroupList>
             </Setter>
@@ -117,21 +134,23 @@
             <Setter Property="VisualStateManager.VisualStateGroups">
                 <VisualStateGroupList>
                     <VisualStateGroup Name="OrientationState">
+
                         <VisualState Name="Portrait">
                             <VisualState.Setters>
                                 <Setter Property="FlowColumnCount" Value="1"/>
                             </VisualState.Setters>
                         </VisualState>
+
                         <VisualState Name="Landscape">
                             <VisualState.Setters>
                                 <Setter Property="FlowColumnCount" Value="2"/>
                             </VisualState.Setters>
                         </VisualState>
+
                     </VisualStateGroup>
                 </VisualStateGroupList>
             </Setter>
         </Style>
 
     </Application.Resources>
-
 </Application>

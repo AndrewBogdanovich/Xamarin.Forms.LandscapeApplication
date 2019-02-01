@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using DLToolkit.Forms.Controls;
 using OrientationApp.Models;
 using Xamarin.Essentials;
 using Xamarin.Forms;

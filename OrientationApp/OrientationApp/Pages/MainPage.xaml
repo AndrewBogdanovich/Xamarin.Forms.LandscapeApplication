@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <pages:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:pages="clr-namespace:OrientationApp.Pages;assembly=OrientationApp"
-             x:Class="OrientationApp.Pages.MainPage"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:pages="clr-namespace:OrientationApp.Pages;assembly=OrientationApp"
+                x:Class="OrientationApp.Pages.MainPage"
                 BackgroundColor="Black"
                 Title="News">
     <ContentPage.ToolbarItems>
@@ -22,23 +22,37 @@
                     
                     <StackLayout Spacing="15" Padding="10">
                         <StackLayout Style="{StaticResource StackLayoutState}" x:Name="FirstFrameLayout" Spacing="10">
+
                             <Frame x:Name="FirstFrame" Style="{StaticResource FrameState}">
-                                <Label x:Name="Alabel" Text="Sport" Style="{StaticResource LabelState}"/>
+                                <Label x:Name="Alabel" 
+                                       Text="Sport"
+                                       Style="{StaticResource LabelState}"/>
                                 <Frame.GestureRecognizers>
                                     <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_OnTapped"/>
                                 </Frame.GestureRecognizers>
                             </Frame>
+
                             <Frame x:Name="SecondFrame" Style="{StaticResource FrameState}">
-                                <Label x:Name="Blabel" Text="Politic" Style="{StaticResource LabelState}"/>
+                                <Label x:Name="Blabel"
+                                       Text="Politic" 
+                                       Style="{StaticResource LabelState}"/>
                             </Frame>
+
                         </StackLayout>
                         <StackLayout Style="{StaticResource StackLayoutState}" x:Name="SecondFrameLayout" Spacing="10">
+
                             <Frame x:Name="ThirdFrame" Style="{StaticResource FrameState}">
-                                <Label x:Name="Clabel" Text="Region" Style="{StaticResource LabelState}"/>
+                                <Label x:Name="Clabel" 
+                                       Text="Region" 
+                                       Style="{StaticResource LabelState}"/>
                             </Frame>
+
                             <Frame x:Name="FourthFrame" Style="{StaticResource FrameState}">
-                                <Label x:Name="Dlabel" Text="Science" Style="{StaticResource LabelState}"/>
+                                <Label x:Name="Dlabel"
+                                       Text="Science"
+                                       Style="{StaticResource LabelState}"/>
                             </Frame>
+
                         </StackLayout>
                     </StackLayout>
                 </StackLayout>

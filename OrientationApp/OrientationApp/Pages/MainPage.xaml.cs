@@ -18,7 +18,6 @@ namespace OrientationApp.Pages
             {
                 VisualStateManager.GoToState(visualElement, DeviceDisplay.MainDisplayInfo.Orientation.ToString());
             }
-
             GoToOrientation();
             ViewsForOrientation.AddRange(new List<View> { FirstFrameLayout, SecondFrameLayout, FirstFrame, SecondFrame,
                 ThirdFrame, FourthFrame, Alabel, Blabel, Clabel, Dlabel, HeaderImage, GridState });
